@@ -10,12 +10,14 @@
 
 .navBar {
   @include flexBetween;
-  margin: 0 20px;
+  padding: 0 20px;
+  border-bottom: 1px solid black;
 
   .profileContainer {
     @include flexBetween;
 
     .profileName {
+      margin-right: 30px;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -28,7 +30,7 @@
     }
 
     .profileImageContainer {
-      padding: 10px;
+      padding: 5px 10px;
 
       .profileImage {
         border-radius: 50%;
