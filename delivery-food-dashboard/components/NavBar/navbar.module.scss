@@ -1,0 +1,35 @@
+@mixin flexBetween {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navBar {
+  @include flexBetween;
+  padding: 0 20px;
+  border-bottom: 1px solid black;
+
+  .profileContainer {
+    @include flexBetween;
+
+    .profileName {
+      margin-right: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      p {
+        border-radius: 8px;
+        padding: 2px 20px;
+        background: #d9d9d9;
+      }
+    }
+
+    .profileImageContainer {
+      padding: 5px 10px;
+
+      .profileImage {
+        border-radius: 50%;
+      }
+    }
+  }
+}
