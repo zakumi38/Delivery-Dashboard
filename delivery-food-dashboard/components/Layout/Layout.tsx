@@ -1,12 +1,11 @@
+import LayoutProps from "../../types/layout.type";
 import layoutStyle from "./layout.module.scss"
 
 // Image
-import Image from "next/image";
-import Cat from "../../public/dashboard/cat.jpg"
+import NavBar from "../NavBar/NavBar";
 
-import logo from "../../public/vercel.svg"
 
-export default function Layout({name, children}) {
+export default function Layout({name, children}: LayoutProps) {
     return (
         <div className={layoutStyle.container}>
             <NavBar name={name}/>
